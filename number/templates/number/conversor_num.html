@@ -6,7 +6,26 @@
     </head>
 
     <body>
-        <h3>Conversor de Números</h3>
+        <div align="center">
+            <h3>Conversor de Números</h3>
+            <form action="" method="get">
+                <input type="text" id="member" name="number" placeholder="Enter a number">
+                <input type="submit" name="send" value="Converter">
+                <br/>
+                <br/>    
+                <td>
+                    Binário <input type="radio" name="to_convert" value="binario">
+                    Hexadecimal <input type="radio" name="to_convert" value="hexadecimal" >
+                </td>                
+
+            </form>
+            
+            {% if convert_number %}
+            <p>
+                <h3> Número {{decimal_number}} convertido {{convert_number}}</h3>
+            </p>
+            {% endif %}
+        </div>
     </body>
 
 </html>
