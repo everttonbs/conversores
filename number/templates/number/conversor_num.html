@@ -9,12 +9,12 @@
         <div align="center">
             <h3>Conversor de Números</h3>
             <form action="" method="get">
-                <input type="text" id="member" name="number" placeholder="Enter a number">
+                <input type="text" id="member" name="number" placeholder="Número decimal">
                 <input type="submit" name="send" value="Converter">
                 <br/>
                 <br/>    
                 <td>
-                    Binário <input type="radio" name="to_convert" value="binario">
+                    Binário     <input type="radio" name="to_convert" value="binario">
                     Hexadecimal <input type="radio" name="to_convert" value="hexadecimal" >
                 </td>                
 
@@ -22,7 +22,7 @@
             
             {% if convert_number %}
             <p>
-                <h3> Número {{decimal_number}} convertido {{convert_number}}</h3>
+                <h3> Número Decimal {{decimal_number}} é {{convert_number}} em {{type}}</h3>
             </p>
             {% endif %}
         </div>
