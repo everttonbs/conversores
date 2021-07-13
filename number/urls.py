@@ -1,7 +1,9 @@
 from django.urls import path
-from . import views
+from .views import views
 
 urlpatterns = [
-    path('', views.conversor_num),
+    path('', views.index),
+    path('número', views.convert_num),
+    path('comprimento', views.unit_lenght)
     
 ]
