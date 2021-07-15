@@ -2,9 +2,6 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def index(request):
-    return render(request, 'index.html')
-
 def convert_num(request):
     if 'number'in request.GET:
         decimal_number = int(request.GET['number'])
@@ -34,10 +31,8 @@ def convert_num(request):
     else:
         context = None
 
-    return render(request, 'number/conversor_num.html', context)
+    return render(request, 'number/convert_num.html', context)
 
-def unit_lenght(request):
-    ...
 
 class Binario():
     def _convert(self, dec_number):

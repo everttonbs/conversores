@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='pt'>
+    <head>
+        <meta charset="='UTF-8">
+        <title>Cumprimentos</title>
+    </head>
+
+    <body>
+        <div align='center'>
+            <h3>Conversor de Unidade de Comprimento</h3>
+            <form action='' method="get">
+                <input type='text' id='member' name='number' placeholder="Medida">
+
+                <select name='si_length' id='si_length'>
+                    <option value=m>metros (m)</option>
+                    <option value=dm>decímetros (dm)</option>
+                    <option value=cm>centímetros (cm)</option>
+                    <option value=mm>milímetros (mm)</option>
+                </select>
+
+                <br><br>
+
+                <input type='submit' value='Converter'>
+
+            </form>
+            <br>
+            {% if convert_number%}
+                {{convert_number}} {{si}}
+            {% endif %}
+            
+        </div>
+    </body>
+
+</html>
+
+

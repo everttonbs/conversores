@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import views
+from .views import views, index, si
 
 urlpatterns = [
-    path('', views.index),
+    path('', index.index),
     path('número', views.convert_num),
-    path('comprimento', views.unit_lenght)
+    path('comprimento', si.unit_lenght)
     
 ]
