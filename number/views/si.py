@@ -11,12 +11,13 @@ def unit_lenght(request):
                 'cm' : 100,
                 'mm' : 1000,
             }
-            si = dic_length[request.GET['si_length']]
-            convert_length = number * si
+            in_si = dic_length[request.GET['in_si_length']]
+            out_si = dic_length[request.GET['out_si_length']]
+            convert_length = number / in_si * out_si
 
             context = {
                 'number' : number,
-                'si' : request.GET['si_length'],
+                'si' : request.GET['out_si_length'],
                 'convert_number' : convert_length
             }
 
